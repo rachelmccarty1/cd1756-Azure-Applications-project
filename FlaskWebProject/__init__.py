@@ -5,7 +5,7 @@ import logging
 from flask import Flask, request
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
+from flask_login import LoginManager, user_logged_in, user_login_failed
 from flask_session import Session
 
 app = Flask(__name__)

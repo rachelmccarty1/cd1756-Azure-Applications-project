@@ -9,6 +9,7 @@ from config import Config
 from FlaskWebProject import app, db
 from FlaskWebProject.forms import LoginForm, PostForm
 from flask_login import current_user, login_user, logout_user, login_required
+from flask_login import user_logged_in, user_login_failed
 from FlaskWebProject.models import User, Post
 import msal
 import uuid
